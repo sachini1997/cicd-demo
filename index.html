@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TradeHub Login</title>
+</head>
+<body>
+  <h1>Welcome to TradeHub</h1>
+
+  <input id="username" placeholder="Username" />
+  <input id="password" placeholder="Password" type="password" />
+  <button id="loginBtn">Login</button>
+
+  <p id="message"></p>
+
+  <script>
+    document.getElementById("loginBtn").addEventListener("click", function() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      if (user === "qa" && pass === "1234") {
+        document.getElementById("message").innerText = "Login Successful";
+      } else {
+        document.getElementById("message").innerText = "Login Failed";
+      }
+    });
+  </script>
+</body>
+</html>
