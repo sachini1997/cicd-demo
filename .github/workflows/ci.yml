@@ -1,8 +1,5 @@
 name: QA CI Demo Pipeline
 
-on:
-  
-
 jobs:
   test:
     runs-on: ubuntu-latest
